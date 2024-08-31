@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<header>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/portfolio">Portfolio</a>
+    </nav>
+</header>
+<main>
+    <h1>My Projects</h1>
+    <section class="projects">
+        <article class="project">
+            <img src="{{ url_for('static', filename='project1.jpg') }}" alt="Project 1" class="project-img">
+            <div class="project-info">
+                <h2>Project Title 1</h2>
+                <p>Description of Project 1. Briefly explain the purpose, technologies used, and your role in this
+                    project.</p>
+                <a href="https://link-to-project1.com" target="_blank">View Project</a>
+            </div>
+        </article>
+        <article class="project">
+            <img src="{{ url_for('static', filename='project2.jpg') }}" alt="Project 2" class="project-img">
+            <div class="project-info">
+                <h2>Project Title 2</h2>
+                <p>Description of Project 2. Briefly explain the purpose, technologies used, and your role in this
+                    project.</p>
+                <a href="https://link-to-project2.com" target="_blank">View Project</a>
+            </div>
+        </article>
+        <!-- Add more project entries as needed -->
+    </section>
+</main>
+<footer>
+    <p>&copy; 2024 My Portfolio</p>
+</footer>
+</body>
+</html>
